@@ -13,14 +13,14 @@
 ActiveRecord::Schema.define(version: 20170616161235) do
 
   create_table "currencies", force: :cascade do |t|
-    t.integer  "data1"
-    t.integer  "data2"
-    t.integer  "data3"
-    t.integer  "data4"
-    t.integer  "data5"
-    t.integer  "data6"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "currency_data"
+    t.integer  "currency_name"
+    t.integer  "fBuyPri"
+    t.integer  "mBuyPri"
+    t.integer  "fSellPri"
+    t.integer  "mSellPri"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
