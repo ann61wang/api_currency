@@ -1,0 +1,19 @@
+<table class="table">
+<tr>
+  <th>data</th>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+  <th>4</th>
+  <th>5</th>
+</tr>
+<% @currencies.each do |currency| %>
+  <tr>
+    <td><%= currency.data1 %></td>
+    <td><%= currency.data2 %></td>
+    <td><%= currency.data3 %></td>
+    <td><%= currency.data4 %></td>
+    <td><%= currency.data5 %></td>
+  </tr>
+<% end %>
+</table>
