@@ -5,7 +5,7 @@ namespace :dev do
     data = JSON.parse(response.body)
 
     data["result"].each do |c|
-    binding.pry
+    
 
         Currency.create!( :currency_data => c["currency_data"], :currency_name => c["currency_name"], :fBuyPri => c["fBuyPri"],
                       :mBuyPri => c["mBuyPri"], :fSellPri => c["fSellPri"], :mSellPri => c["mSellPri"] )

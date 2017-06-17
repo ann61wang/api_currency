@@ -6,14 +6,16 @@
   <th>3</th>
   <th>4</th>
   <th>5</th>
+  <th>6</th>
 </tr>
 <% @currencies.each do |currency| %>
   <tr>
-    <td><%= currency.data1 %></td>
-    <td><%= currency.data2 %></td>
-    <td><%= currency.data3 %></td>
-    <td><%= currency.data4 %></td>
-    <td><%= currency.data5 %></td>
+    <td><%= currency.currency_data %></td>
+    <td><%= currency.currency_name %></td>
+    <td><%= currency.fBuyPri %></td>
+    <td><%= currency.mBuyPri %></td>
+    <td><%= currency.fSellPri %></td>
+    <td><%= currency.mSellPri %></td>
   </tr>
 <% end %>
 </table>
