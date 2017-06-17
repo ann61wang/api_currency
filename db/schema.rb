@@ -10,17 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170616161235) do
+ActiveRecord::Schema.define(version: 20170617101505) do
 
   create_table "currencies", force: :cascade do |t|
     t.integer  "currency_data"
-    t.integer  "currency_name"
+    t.string   "currency_name"
     t.integer  "fBuyPri"
     t.integer  "mBuyPri"
     t.integer  "fSellPri"
     t.integer  "mSellPri"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "currency_id"
   end
 
 end
