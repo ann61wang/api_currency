@@ -1,8 +1,8 @@
 <table class="table">
 <tr>
   <th>Currency_id</th>
-  <th>Data</th>
-  <th>Name</th>
+  <th>时间</th>
+  <th>货币名称</th>
   <th>fBuyPri</th>
   <th>mBuyPri</th>
   <th>fSellPri</th>
@@ -11,7 +11,10 @@
 <% @currencies.each do |currency| %>
   <tr>
     <td><%= currency.currency_id %></td>
-    <td><%= currency.currency_data %></td>
+    <td>
+      <%= currency.currency_data %>
+      <%= link_to "更新", update_data_currency_path(currency), :method => :post %>
+    </td>
     <td><%= currency.currency_name %></td>
     <td><%= currency.fBuyPri %></td>
     <td><%= currency.mBuyPri %></td>
